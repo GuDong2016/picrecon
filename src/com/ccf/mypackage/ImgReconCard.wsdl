@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions name="CardImgreconImplService" targetNamespace="http://webservice.wintone.com/" xmlns:ns1="http://cxf.apache.org/bindings/xformat" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://webservice.wintone.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://webservice.wintone.com/" xmlns:tns="http://webservice.wintone.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="wjbresult" type="tns:wjbresult" />
+<xsd:complexType name="wjbresult">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+<xsd:element minOccurs="0" name="arg1" type="xsd:string" />
+<xsd:element minOccurs="0" name="arg2" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="wjbresultResponse" type="tns:wjbresultResponse" />
+<xsd:complexType name="wjbresultResponse">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="return" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="doAllCardReconForUsers" type="tns:doAllCardReconForUsers" />
+<xsd:complexType name="doAllCardReconForUsers">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+<xsd:element minOccurs="0" name="arg1" type="xsd:string" />
+<xsd:element minOccurs="0" name="arg2" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="doAllCardReconForUsersResponse" type="tns:doAllCardReconForUsersResponse" />
+<xsd:complexType name="doAllCardReconForUsersResponse">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="return" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="doPhoneCardRecon" type="tns:doPhoneCardRecon" />
+<xsd:complexType name="doPhoneCardRecon">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="username" type="xsd:string" />
+<xsd:element minOccurs="0" name="paramdata" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="doPhoneCardReconResponse" type="tns:doPhoneCardReconResponse" />
+<xsd:complexType name="doPhoneCardReconResponse">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="result" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="doAllCardRecon" type="tns:doAllCardRecon" />
+<xsd:complexType name="doAllCardRecon">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+<xsd:element minOccurs="0" name="arg1" type="xsd:string" />
+<xsd:element minOccurs="0" name="arg2" type="xsd:string" />
+<xsd:element minOccurs="0" name="arg3" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="doAllCardReconResponse" type="tns:doAllCardReconResponse" />
+<xsd:complexType name="doAllCardReconResponse">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="return" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="searchAllCardAmount" type="tns:searchAllCardAmount" />
+<xsd:complexType name="searchAllCardAmount">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+<xsd:element minOccurs="0" name="arg1" type="xsd:string" />
+<xsd:element minOccurs="0" name="arg2" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="searchAllCardAmountResponse" type="tns:searchAllCardAmountResponse" />
+<xsd:complexType name="searchAllCardAmountResponse">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="return" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="searchPhoneAmount" type="tns:searchPhoneAmount" />
+<xsd:complexType name="searchPhoneAmount">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="username" type="xsd:string" />
+<xsd:element minOccurs="0" name="paramdata" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="searchPhoneAmountResponse" type="tns:searchPhoneAmountResponse" />
+<xsd:complexType name="searchPhoneAmountResponse">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="result" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="getVersion" type="tns:getVersion" />
+<xsd:complexType name="getVersion">
+<xsd:sequence />
+</xsd:complexType>
+<xsd:element name="getVersionResponse" type="tns:getVersionResponse" />
+<xsd:complexType name="getVersionResponse">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="return" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="doAllCardReconforPhone" type="tns:doAllCardReconforPhone" />
+<xsd:complexType name="doAllCardReconforPhone">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="username" type="xsd:string" />
+<xsd:element minOccurs="0" name="paramdata" type="xsd:string" />
+<xsd:element minOccurs="0" name="signdata" type="xsd:string" />
+<xsd:element minOccurs="0" name="imgtype" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="doAllCardReconforPhoneResponse" type="tns:doAllCardReconforPhoneResponse" />
+<xsd:complexType name="doAllCardReconforPhoneResponse">
+<xsd:sequence>
+<xsd:element minOccurs="0" name="result" type="xsd:string" />
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="doPhoneCardReconResponse">
+    <wsdl:part element="tns:doPhoneCardReconResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doAllCardReconForUsersResponse">
+    <wsdl:part element="tns:doAllCardReconForUsersResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="searchAllCardAmount">
+    <wsdl:part element="tns:searchAllCardAmount" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="searchPhoneAmount">
+    <wsdl:part element="tns:searchPhoneAmount" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doAllCardReconForUsers">
+    <wsdl:part element="tns:doAllCardReconForUsers" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doAllCardReconforPhoneResponse">
+    <wsdl:part element="tns:doAllCardReconforPhoneResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getVersion">
+    <wsdl:part element="tns:getVersion" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doAllCardReconResponse">
+    <wsdl:part element="tns:doAllCardReconResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="searchAllCardAmountResponse">
+    <wsdl:part element="tns:searchAllCardAmountResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doAllCardReconforPhone">
+    <wsdl:part element="tns:doAllCardReconforPhone" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doPhoneCardRecon">
+    <wsdl:part element="tns:doPhoneCardRecon" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="searchPhoneAmountResponse">
+    <wsdl:part element="tns:searchPhoneAmountResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="doAllCardRecon">
+    <wsdl:part element="tns:doAllCardRecon" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="wjbresultResponse">
+    <wsdl:part element="tns:wjbresultResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getVersionResponse">
+    <wsdl:part element="tns:getVersionResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="wjbresult">
+    <wsdl:part element="tns:wjbresult" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="CardImgrecon">
+    <wsdl:operation name="wjbresult">
+      <wsdl:input message="tns:wjbresult" name="wjbresult">
+    </wsdl:input>
+      <wsdl:output message="tns:wjbresultResponse" name="wjbresultResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doAllCardReconForUsers">
+      <wsdl:input message="tns:doAllCardReconForUsers" name="doAllCardReconForUsers">
+    </wsdl:input>
+      <wsdl:output message="tns:doAllCardReconForUsersResponse" name="doAllCardReconForUsersResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doPhoneCardRecon">
+      <wsdl:input message="tns:doPhoneCardRecon" name="doPhoneCardRecon">
+    </wsdl:input>
+      <wsdl:output message="tns:doPhoneCardReconResponse" name="doPhoneCardReconResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doAllCardRecon">
+      <wsdl:input message="tns:doAllCardRecon" name="doAllCardRecon">
+    </wsdl:input>
+      <wsdl:output message="tns:doAllCardReconResponse" name="doAllCardReconResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchAllCardAmount">
+      <wsdl:input message="tns:searchAllCardAmount" name="searchAllCardAmount">
+    </wsdl:input>
+      <wsdl:output message="tns:searchAllCardAmountResponse" name="searchAllCardAmountResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchPhoneAmount">
+      <wsdl:input message="tns:searchPhoneAmount" name="searchPhoneAmount">
+    </wsdl:input>
+      <wsdl:output message="tns:searchPhoneAmountResponse" name="searchPhoneAmountResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVersion">
+      <wsdl:input message="tns:getVersion" name="getVersion">
+    </wsdl:input>
+      <wsdl:output message="tns:getVersionResponse" name="getVersionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doAllCardReconforPhone">
+      <wsdl:input message="tns:doAllCardReconforPhone" name="doAllCardReconforPhone">
+    </wsdl:input>
+      <wsdl:output message="tns:doAllCardReconforPhoneResponse" name="doAllCardReconforPhoneResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CardImgreconImplServiceSoapBinding" type="tns:CardImgrecon">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="wjbresult">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="wjbresult">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="wjbresultResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doAllCardReconForUsers">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="doAllCardReconForUsers">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="doAllCardReconForUsersResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doPhoneCardRecon">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="doPhoneCardRecon">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="doPhoneCardReconResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doAllCardRecon">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="doAllCardRecon">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="doAllCardReconResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchAllCardAmount">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="searchAllCardAmount">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="searchAllCardAmountResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchPhoneAmount">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="searchPhoneAmount">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="searchPhoneAmountResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="doAllCardReconforPhone">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="doAllCardReconforPhone">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="doAllCardReconforPhoneResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVersion">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getVersion">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getVersionResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CardImgreconImplService">
+    <wsdl:port binding="tns:CardImgreconImplServiceSoapBinding" name="CardImgreconImplPort">
+      <soap:address location="http://115.28.166.97:8888/cxfServerX/ImgReconCard" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
