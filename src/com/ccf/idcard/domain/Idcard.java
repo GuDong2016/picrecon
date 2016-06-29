@@ -1,9 +1,11 @@
 package com.ccf.idcard.domain;
 
+import com.ccf.base.domain.BaseModel;
+
 /**
  * Created by dell on 2016/6/28.
  */
-public class Idcard {
+public class Idcard extends BaseModel{
     private String idnum;
     private String name;
     private String img;
