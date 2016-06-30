@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 别名 -->
+    <typeAliases>
+        <!--<typeAlias type="com.hoo.entity.Account" alias="account"/>-->
+        <typeAlias type="com.ccf.idcard.domain.Idcard" alias="idcard"/>
+
+    </typeAliases>
+
+    <mappers>
+        <!--<mapper resource="com/smart/sms/user/dao/User.xml"/>-->
+        <mapper resource="com/ccf/idcard/dao/Idcard.xml"/>
+    </mappers>
+
+</configuration>
